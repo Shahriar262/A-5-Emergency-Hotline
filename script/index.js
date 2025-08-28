@@ -65,11 +65,18 @@ for (let i = 0; i < callButtons.length; i++) {
 
         alert(`Calling ${serviceName} ${serviceNumber}...`);
 
+        //set local time
+        const now = new Date();
+        const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true });
+        
         const historyEntry = document.createElement('div');
-        historyEntry.classList.add('border-2','border-none','bg-gray-100','rounded-[8px]','mb-2','h-[70px]','px-2','py-2');
+        historyEntry.classList.add('border-2','border-none','bg-gray-100','rounded-[8px]','mb-2','h-[70px]','px-2','py-2', 'flex', 'justify-between', 'items-center');
         historyEntry.innerHTML = `
-            <p class="font-semibold mb-1">${serviceName}</p>
-            <p class="text-gray-500 text-sm">${serviceNumber}</p>
+           <div>
+             <p class="font-semibold mb-1">${serviceName}</p>
+             <p class="text-gray-500 text-sm">${serviceNumber}</p>
+           </div>
+             <p class="text-gray-900 text-[14px] font-medium mt-[25px]">${timeString}</p>
         `;
         callHistoryContainer.appendChild(historyEntry);
     });
