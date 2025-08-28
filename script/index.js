@@ -40,3 +40,46 @@ for(let i = 0; i < copy.length; i++){
         
     })
 }
+
+
+//call button functionality
+const callButtons = document.querySelectorAll('.call-btn');
+const coins = document.getElementById('coin-btn');
+const callHistoryContainer = document.querySelector('aside'); 
+
+for (let i = 0; i < callButtons.length; i++) {
+    callButtons[i].addEventListener('click', function() {
+        let currentCoins = parseInt(coins.innerText);
+        
+        if (currentCoins < 20) {
+            alert("Not enough coins to make a call!");
+            return;
+        }
+
+        currentCoins -= 20;
+        coins.innerText = currentCoins;
+
+        const card = callButtons[i].closest('.card-container');
+        const serviceName = card.querySelector('.service-name').innerText;
+        const serviceNumber = card.querySelector('.helpline-num').innerText;
+
+        alert(`Calling ${serviceName} ${serviceNumber}...`);
+
+        const historyEntry = document.createElement('div');
+        historyEntry.classList.add('border-2','border-none','bg-gray-100','rounded-[8px]','mb-2','h-[70px]','px-2','py-2');
+        historyEntry.innerHTML = `
+            <p class="font-semibold mb-1">${serviceName}</p>
+            <p class="text-gray-500 text-sm">${serviceNumber}</p>
+        `;
+        callHistoryContainer.appendChild(historyEntry);
+    });
+}
+
+//clear call history functionality
+const clearButton = document.getElementById('clear-btn');
+const historyDiv = document.getElementById('history-div');
+
+clearButton.addEventListener('click',function(){
+   callHistoryContainer.innerHTML = '';
+   callHistoryContainer.appendChild(historyDiv);
+});
