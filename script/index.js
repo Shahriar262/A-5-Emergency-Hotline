@@ -76,7 +76,7 @@ for (let i = 0; i < callButtons.length; i++) {
              <p class="font-semibold mb-1">${serviceName}</p>
              <p class="text-gray-500 text-sm">${serviceNumber}</p>
            </div>
-             <p class="text-gray-900 text-[14px] font-medium mt-[25px]">${timeString}</p>
+             <p class="text-gray-900 text-[13px] font-medium mt-[25px]">${timeString}</p>
         `;
         callHistoryContainer.appendChild(historyEntry);
     });
