@@ -2,7 +2,8 @@
 
 ### 1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
 
-Answer: 
+Answer:
+
   **`Difference between getElementById and getElementsByClassName:`**
 
   **`getElementById():`** 
@@ -37,6 +38,7 @@ Answer:
 ### 2. How do you **create and insert a new element into the DOM**?
 
 Answer: 
+
   **`For creating new element we use "document.createElement()" method.`**
 
   const newElement = document.createElement('div'); 
@@ -58,7 +60,8 @@ Answer:
   
 ### 3. What is **Event Bubbling** and how does it work?
 
-Answer: 
+Answer:
+
   **`Event Bubbling:`** 
    Event bubbling in JavaScript is a mechanism in the Document Object Model (DOM) event propagation where an event, triggered on an element, propagates upwards through its ancestor elements in the DOM tree. 
   
@@ -78,6 +81,7 @@ Answer:
 ### 4. What is **Event Delegation** in JavaScript? Why is it useful?
 
 Answer: 
+
   **`Event Delegation:`** 
    Event delegation is a powerful technique that simplifies event handling, improves performance, and enhances the flexibility of our code.
 
@@ -97,6 +101,7 @@ Answer:
 ### 5. What is the difference between **preventDefault() and stopPropagation()** methods?
 
 Answer:
+
 **`preventDefault() method:`**
 
   -Prevent the default action of browsers taking on that event.
