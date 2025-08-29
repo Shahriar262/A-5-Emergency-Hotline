@@ -6,12 +6,14 @@ Ans:
   **`Difference between getElementById and getElementsByClassName:`**
 
   **`getElementById():`** 
+
   -This method selects an element based on its unique id attribute. In HTML, id attributes are intended to 
    be unique within a document.
 
   -It returns a single element.
 
   **`getElementsByClassName():`** 
+
   -This method selects elements based on their class attribute. Multiple elements in an  HTML document can 
    share the same class name.
 
@@ -19,12 +21,14 @@ Ans:
 
   **`Difference between querySelector and querySelectorAll:`**
 
-  **`querySelector():`** 
+  **`querySelector():`**
+
   -This method returns the first element within the document that matches the specified CSS selector. 
 
   -If no elements match the selector, it returns null.
 
   **`querySelectorAll():`** 
+
   -It returns `NodeList` by matching CSS selectors. 
 
   -If no elements match the selector, it returns empty `NodeList.`
@@ -78,6 +82,7 @@ Ans:
    Event delegation is a powerful technique that simplifies event handling, improves performance, and enhances the flexibility of our code.
 
   **`Why it is useful:`**
+
     -Improved Performance and Reduced Memory Usage
 
     -Efficient Handling of Dynamic Content
@@ -93,6 +98,7 @@ Ans:
 
 Ans:
 **`preventDefault() method:`**
+
   -Prevent the default action of browsers taking on that event.
 
   -It uses the DOM version of DOM Level 3 Events.
@@ -104,9 +110,10 @@ Ans:
   -It's supported browsers are - chrome, firefox, safari, opera, etc.
 
   -It's syntax is - `event.preventDefault();`
-  
+
 
 **`stopPropagation() method:`**
+
   -Prevent further propagation of current events by parent or child elements.
 
   -It uses the DOM version of DOM Level 2 Events.
